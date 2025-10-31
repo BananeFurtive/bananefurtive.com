@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité - Bananapp</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9fafb;
+      color: #333;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      color: #f5a623;
+    }
+    h2 {
+      margin-top: 30px;
+      border-bottom: 2px solid #f5a623;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .update {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Politique de Confidentialité de l’application Bananapp</h1>
+  <p class="update">Dernière mise à jour : juillet 2025</p>
+  <p>
+    La présente Politique de Confidentialité décrit comment <strong>Banana Corporation</strong> collecte, utilise, conserve et protège vos informations personnelles lors de l’utilisation de l’application <strong>Bananapp</strong>, disponible sur le Google Play Store.
+  </p>
+
+  <h2>1. Qui sommes-nous ?</h2>
+  <ul>
+    <li><strong>Nom de l’application :</strong> Bananapp</li>
+    <li><strong>Éditeur :</strong> Banana Corporation</li>
+    <li><strong>Responsable de la publication :</strong> Evalie Starowicz</li>
+    <li><strong>Email de contact :</strong> <a href="mailto:banana2011app@gmail.com">banana2011app@gmail.com</a></li>
+  </ul>
+
+  <h2>2. Quelles données collectons-nous ?</h2>
+  <p>Lorsque vous utilisez Bananapp, nous pouvons collecter les catégories suivantes de données :</p>
+  <p><strong>a) Données que vous fournissez :</strong></p>
+  <ul>
+    <li>Adresse e-mail (si inscription ou contact)</li>
+    <li>Photo de profil</li>
+    <li>Nom ou pseudo</li>
+    <li>Préférences utilisateur</li>
+  </ul>
+  <p><strong>b) Données collectées automatiquement :</strong></p>
+  <ul>
+    <li>Informations sur l’appareil (modèle, système d’exploitation)</li>
+    <li>Adresse IP (de façon temporaire)</li>
+    <li>Données d’usage (pages consultées, interactions)</li>
+    <li>Journaux d’erreurs et crashs via Firebase Crashlytics</li>
+  </ul>
+
+  <h2>3. Utilisation des données</h2>
+  <ul>
+    <li>Fournir et maintenir le bon fonctionnement de l’application</li>
+    <li>Personnaliser l’expérience utilisateur</li>
+    <li>Analyser l’utilisation et améliorer les fonctionnalités</li>
+    <li>Résoudre les erreurs techniques et améliorer la stabilité</li>
+    <li>Communiquer avec vous si nécessaire</li>
+  </ul>
+
+  <h2>4. Base légale (conformément au RGPD)</h2>
+  <ul>
+    <li>Votre consentement explicite (si requis)</li>
+    <li>L’intérêt légitime (amélioration continue de l’application)</li>
+    <li>Le respect d’obligations légales (sécurité, journalisation)</li>
+  </ul>
+
+  <h2>5. Partage des données</h2>
+  <p>Nous ne vendons ni ne louons vos données personnelles. Certaines données peuvent être transmises aux services tiers suivants :</p>
+  <ul>
+    <li>Firebase Authentication (connexion sécurisée)</li>
+    <li>Firebase Firestore (stockage en base de données)</li>
+    <li>Firebase Crashlytics (rapport d’erreurs)</li>
+    <li>Google Analytics for Firebase (statistiques anonymisées)</li>
+  </ul>
+  <p>
+    Ces services sont fournis par Google LLC. Leur politique de confidentialité est disponible ici :  
+    👉 <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
+  </p>
+
+  <h2>6. Durée de conservation des données</h2>
+  <ul>
+    <li>Tant que votre compte est actif (le cas échéant)</li>
+    <li>Ou pendant 12 mois après votre dernière utilisation</li>
+    <li>Ou jusqu’à votre demande de suppression</li>
+  </ul>
+
+  <h2>7. Vos droits</h2>
+  <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+  <ul>
+    <li>Droit d’accès</li>
+    <li>Droit de rectification</li>
+    <li>Droit à l’effacement</li>
+    <li>Droit à la limitation du traitement</li>
+    <li>Droit à la portabilité</li>
+    <li>Droit d’opposition</li>
+  </ul>
+  <p>📧 Pour exercer vos droits, contactez-nous à : <a href="mailto:banana2011app@gmail.com">banana2011app@gmail.com</a></p>
+
+  <h2>8. Sécurité</h2>
+  <p>
+    Nous mettons en œuvre des mesures techniques et organisationnelles appropriées (chiffrement, pare-feu, contrôle d’accès) pour protéger vos données contre les accès non autorisés, la perte ou les altérations.
+  </p>
+
+  <h2>9. Transferts de données hors UE</h2>
+  <p>
+    L’utilisation des services Google peut impliquer un transfert de données en dehors de l’Union européenne (notamment vers les États-Unis). Ces transferts sont encadrés par les clauses contractuelles types approuvées par la Commission européenne.
+  </p>
+
+  <h2>10. Cookies et traceurs</h2>
+  <p>
+    L’application ne dépose pas de cookies dans votre navigateur. Toutefois, elle utilise des identifiants techniques anonymes via Firebase Analytics pour améliorer l’expérience utilisateur.
+  </p>
+
+  <h2>11. Modifications de la politique</h2>
+  <p>
+    Cette politique peut être mise à jour à tout moment pour refléter des évolutions légales ou techniques. Toute modification majeure sera notifiée aux utilisateurs via l’application.  
+    <br><span class="update">Dernière mise à jour : juillet 2025</span>
+  </p>
+
+  <h2>12. Contact</h2>
+  <p>
+    Pour toute question relative à cette politique ou à la gestion de vos données :  
+    📧 <a href="mailto:banana2011app@gmail.com">banana2011app@gmail.com</a>
+  </p>
+  
+    <footer>
+      <p><a href="index.html">← Retour</a> • <a href="../index.html">Accueil</a></p>
+    </footer>
+
+</body>
+</html>
