@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devenir testeur – Banan'App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #000000;
+      color: #00ff88;
+      min-height: 100vh;
+    }
+
+    /* APP BAR */
+    .app-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #00ff88;
+      z-index: 1000;
+    }
+
+    .app-bar-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #00ff88;
+      text-decoration: none;
+    }
+
+    .nav-btn {
+      padding: 8px 16px;
+      border: 1px solid #00ff88;
+      border-radius: 6px;
+      color: #00ff88;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: #00ff88;
+      color: #000000;
+      box-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
+    }
+
+    /* CONTENT */
+    main {
+      padding: 140px 20px 80px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+
+    .card {
+      border: 1px solid #00ff88;
+      border-radius: 16px;
+      padding: 30px;
+      margin-top: 40px;
+      box-shadow: 0 0 25px rgba(0, 255, 136, 0.15);
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    ul li {
+      margin: 15px 0;
+      font-size: 1.05rem;
+    }
+
+    .email {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      word-break: break-all;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #00ff88;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- APP BAR -->
+  <nav class="app-bar">
+    <div class="app-bar-content">
+      <a href="index.html" class="logo">🍌 Banan'App</a>
+      <a href="index.html" class="nav-btn">Retour à l'accueil</a>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main>
+    <h1>Devenir testeur Banan'App</h1>
+    <p>
+      Rejoignez les premiers utilisateurs de <strong>Banan'App</strong> 
+    </p>
+
+    <div class="card">
+      <h2>Conditions pour devenir testeur</h2>
+      <ul>
+        <li> Posséder un téléphone sous <strong>Android</strong></li>
+        <li> Disposer d'une adresse e-mail valide</li>
+        <li> Être motivé pour tester l'application et donner votre avis</li>
+      </ul>
+
+      <p>
+        Pour devenir testeur, contactez-nous par e-mail et indiquez simplement
+        <strong>votre adresse e-mail</strong> afin que nous puissions vous ajouter au programme de test.
+      </p>
+
+      <div class="email">
+        bananefurtivecorp@gmail.com
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Banan'App – Programme testeur
+  </footer>
+
+</body>
+</html>
