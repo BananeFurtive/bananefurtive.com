@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Banan'App – L'app ultime des sondages</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -13,26 +14,91 @@
     }
 
     body {
-      background: #000000;
+      background: #000;
       color: #00ff88;
       line-height: 1.6;
     }
 
+    /* ================= APP BAR ================= */
+
+    .app-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #00ff88;
+      z-index: 1000;
+    }
+
+    .app-bar-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.9rem;
+      background: none;
+      border: none;
+      color: #00ff88;
+      cursor: pointer;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #00ff88;
+      text-decoration: none;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .nav-btn {
+      padding: 8px 16px;
+      border: 1px solid #00ff88;
+      border-radius: 6px;
+      color: #00ff88;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .nav-link:hover,
+    .nav-btn:hover {
+      opacity: 1;
+      background: #00ff88;
+      color: #000;
+    }
+
+    /* ================= HEADER ================= */
+
     header {
       min-height: 100vh;
+      padding: 140px 20px 40px;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 40px 20px;
-      background: #000000;
     }
 
     header h1 {
       font-size: 3rem;
       margin-bottom: 20px;
-      color: #00ff88;
     }
 
     header p {
@@ -57,25 +123,19 @@
       text-decoration: none;
       background: transparent;
       color: #00ff88;
-      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
     }
 
     .btn-primary {
       background: #00ff88;
-      color: #000000;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
-      background: #00ff88;
-      color: #000000;
+      color: #000;
     }
 
     .btn:disabled {
       opacity: 0.5;
       cursor: not-allowed;
     }
+
+    /* ================= SECTIONS ================= */
 
     section {
       padding: 80px 20px;
@@ -98,227 +158,160 @@
 
     .screens {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, max-content));
+      gap: 30px;
+      justify-content: center;
     }
 
-    .screen-placeholder {
-      height: 350px;
-      border-radius: 16px;
-      background: #000000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #00ff88;
-      font-size: 1rem;
-      border: 2px dashed #00ff88;
+    .screens img {
+      width: 100%;
+      max-width: 240px;
+      aspect-ratio: 9 / 19.5;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid #00ff88;
+      box-shadow: 0 0 25px rgba(0, 255, 136, 0.15);
     }
+
+    /* ================= FOOTER ================= */
 
     footer {
       padding: 40px 20px;
       text-align: center;
-      background: #000000;
       border-top: 1px solid #00ff88;
     }
-      .app-bar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #00ff88;
-      z-index: 1000;
-    }
 
-    .app-bar-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 14px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #00ff88;
-    }
-
-    .nav-actions {
+    .legal-links {
       display: flex;
       gap: 20px;
-      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 15px 0;
     }
 
-    .nav-link {
-      color: #00ff88;
-      text-decoration: none;
-      font-size: 0.95rem;
-      opacity: 0.85;
-    }
-
-    .nav-link:hover {
-      opacity: 1;
-      text-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
-    }
-
-    .nav-btn {
-      padding: 8px 16px;
-      border: 1px solid #00ff88;
-      border-radius: 6px;
+    .legal-links a {
       color: #00ff88;
       text-decoration: none;
       font-size: 0.9rem;
-      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      opacity: 0.8;
     }
 
-    .nav-btn:hover {
-      background: #00ff88;
-      color: #000000;
-      box-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
+    .legal-links a:hover {
+      opacity: 1;
     }
 
-    header {
-      padding-top: 120px;
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-actions {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 25px 0;
+        border-bottom: 1px solid #00ff88;
+        display: none;
+      }
+
+      .nav-actions.active {
+        display: flex;
+      }
     }
-    /* ===== MENU RESPONSIVE ===== */
-
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  background: none;
-  border: none;
-  color: #00ff88;
-  cursor: pointer;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-actions {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: #000;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 0;
-    border-bottom: 1px solid #00ff88;
-    display: none;
-  }
-
-  .nav-actions.active {
-    display: flex;
-  }
-
-  .nav-link,
-  .nav-btn {
-    font-size: 1rem;
-  }
-}
-
   </style>
 </head>
 
-<script>
-  const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".nav-actions");
-
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-</script>
-
-
 <body>
 
-<!-- APP BAR -->
-<nav class="app-bar">
-  <div class="app-bar-content">
-    <span class="logo">🍌 Banan'App</span>
+  <!-- APP BAR -->
+  <nav class="app-bar">
+    <div class="app-bar-content">
+      <span class="logo">🍌 Banan'App</span>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
 
-    <!-- Bouton hamburger -->
-    <button class="menu-toggle" aria-label="Menu">
-      ☰
-    </button>
-
-    <div class="nav-actions">
-      <a href="#repondre" class="nav-link">Répondre</a>
-      <a href="#creer" class="nav-link">Fonctionnalités</a>
-      <a href="mailto:bananefurtivecorp@gmail.com" class="nav-link">Contact</a>
-      <a href="devenir-testeur.html" class="nav-btn">Devenir testeur</a>
+      <div class="nav-actions">
+        <a href="#repondre" class="nav-link">Répondre</a>
+        <a href="#creer" class="nav-link">Fonctionnalités</a>
+        <a href="mailto:bananefurtivecorp@gmail.com" class="nav-link">Contact</a>
+        <a href="devenir-testeur/index.html" class="nav-btn">Devenir testeur</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-
+  <!-- HEADER -->
   <header>
     <h1>Banan'App</h1>
     <p>L'app ultime des sondages</p>
     <div class="buttons">
       <button class="btn btn-primary" disabled>
-        Télécharger (l'app n'est pas encore disponible)
+        Télécharger (bientôt)
       </button>
-      <a href="devenir-testeur/index.html" class="btn">
-        Devenir testeur
-      </a>
+      <a href="devenir-testeur/index.html" class="btn">Devenir testeur</a>
     </div>
   </header>
 
+  <!-- SECTIONS -->
   <section id="repondre">
     <h2>Répondez à des sondages</h2>
-    <p>Donnez votre avis en quelques secondes et regardez celui des autres !</p>
+    <p>Donnez votre avis en quelques secondes.</p>
     <div class="screens">
-      <img src="zert1.jpeg" alt="">
-      <img src="zert2.jpeg" alt="">
-      <img src="zert3.jpeg" alt="">
+      <img src="zert1.jpeg" alt="Screenshot app 1">
+      <img src="zert2.jpeg" alt="Screenshot app 2">
+      <img src="zert3.jpeg" alt="Screenshot app 3">
     </div>
   </section>
 
   <section id="creer">
     <h2>Créez vos sondages</h2>
-    <p>Créez facilement des sondages et analysez les réponses en temps réel.</p>
+    <p>Analysez les réponses en temps réel.</p>
     <div class="screens">
-      <img src="zuti.jpeg" alt="">
-    </div>
-  </section>
-
-  <section id="explorer">
-    <h2>Explorez</h2>
-    <p>Découvrez les sondages populaires et les tendances du moment.</p>
-    <div class="screens">
-      <div class="screen-placeholder">Screenshot</div>
-      <div class="screen-placeholder">Screenshot</div>
-      <div class="screen-placeholder">Screenshot</div>
+      <img src="zuti.jpeg" alt="Screenshot création">
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-     <p>
-      Vous souhaitez nous écrire ?<br>
-      Envoyez un mail à 
-      <a href="mailto:bananefurtivecorp@gmail.com">bananefurtivecorp@gmail.com</a>
+    <p>
+      <a href="mailto:bananefurtivecorp@gmail.com">
+        bananefurtivecorp@gmail.com
+      </a>
     </p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <div class="legal">
-<h3>Legal</h3>
-<div class="legal-links">
-<a href="cgu.html">Conditions Générales d’Utilisation</a>
-<a href="pdc.html">Politique de confidentialité</a>
-<a href="ml.html">Mentions légales</a>
-</div>
+    <h3>Légal</h3>
+    <div class="legal-links">
+      <a href="cgu.html">CGU</a>
+      <a href="pdc.html">Confidentialité</a>
+      <a href="ml.html">Mentions légales</a>
     </div>
     <p>© 2026 Banan'App – Tous droits réservés</p>
   </footer>
+
+  <!-- JS (corrigé) -->
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-actions");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+
+    // Ferme le menu quand on clique sur un lien
+    document.querySelectorAll(".nav-actions a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+    });
+  </script>
 
 </body>
 </html>
